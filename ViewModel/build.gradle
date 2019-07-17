@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.github.Little-twilight:JobSchedule:master-SNAPSHOT'
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
