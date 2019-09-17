@@ -12,6 +12,8 @@ public interface IViewModel<ViewType extends IView, ModelType> {
 
 	void refresh();
 
+	void refresh(ViewType viewType);
+
 	void setup();
 
 	void dispose();
