@@ -1,4 +1,4 @@
-package com.zhongyou.viewmodel;
+package com.macfred.viewmodel;
 
 public interface IViewModel<ViewType extends IView, ModelType> {
 

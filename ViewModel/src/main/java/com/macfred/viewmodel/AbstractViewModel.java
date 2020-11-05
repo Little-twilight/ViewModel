@@ -1,8 +1,8 @@
-package com.zhongyou.viewmodel;
+package com.macfred.viewmodel;
 
-import com.zhongyou.util.function.BiConsumer;
-import com.zhongyou.util.function.Consumer;
-import com.zhongyou.util.function.Supplier;
+import com.macfred.util.function.BiConsumer;
+import com.macfred.util.function.Consumer;
+import com.macfred.util.function.Supplier;
 
 import java.util.Collection;
 import java.util.Set;
@@ -81,7 +81,7 @@ public abstract class AbstractViewModel<ViewType extends IView, ModelType> imple
     }
 
     protected void forEachView(Consumer<ViewType> operation) {
-        if(!isSetup()){
+        if (!isSetup()) {
             return;
         }
         for (ViewType view : getView()) {
